@@ -1,5 +1,7 @@
-body {
+html, body {
 	margin: auto;
+	height: 100%;
+	background-color: green;
 }
 
 div {
@@ -14,7 +16,7 @@ h1 {
 }
 
 #cover {
-	background-color: lightcyan;
+	background-color: green;
 	z-index: 1;
 	transition: 1s;
 	transform-origin: left;
@@ -30,7 +32,7 @@ h1 {
 }
 
 img {
-	width: 60%;
+	width: 40%;
 }
 
 .button {
