@@ -1,11 +1,33 @@
+let music = new Audio('zvuk-saljuta.mp3');
+music.loop = true; 
+
+const wishes = [
+  "Wish you joy and happiness!",
+  "May your dreams come true!",
+  "Happy New Year! Let it be your best year!",
+  "Health, love and success to you!",
+  "Let every day bring something wonderful!",
+  "New victories and bright moments!",
+  "Peace, warmth and good people around you!",
+  "Let miracles happen!"
+];
+
 function openCard() {
 	let cover = document.getElementById('cover');
 	cover.className = 'open-card';
+
+	music.currentTime = 0; 
+    music.play();
+
+    const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
+    document.getElementById('wish').textContent = randomWish;
 }
 
 function closeCard() {
 	let cover = document.getElementById('cover');
 	cover.className = '';
+
+	music.pause();
 }
 
 const number_of_snowflakes = 300;
@@ -61,13 +83,13 @@ const animate = () => {
 		drawSnowflake(snowflake);
 	});
 
+
 	requestAnimationFrame(animate);
 };
 
 for (let i = 0; i < number_of_snowflakes; i++) {
 	snowflakes.push(createSnowflake());
 }
-
 
 
 animate()
