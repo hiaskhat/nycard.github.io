@@ -38,14 +38,14 @@ img {
 }
 
 .button {
-	font-size: 17px;
-	background-color: coral;
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	cursor: pointer;
-	margin: 10px;
-	animation: pulse 2s infinite;
+	font-size: 17px; /*размер шрифта*/
+	background-color: coral; /*цвет фона*/
+	border: none; /*граница*/
+	color: white; /*цвет шрифта*/
+	padding: 15px 32px; /*отступ внутри кнопки*/
+	cursor: pointer; /*вид курсора*/
+	margin: 10px; /*отступ снаружи кнопки*/
+	animation: pulse 2s infinite; /*анимация*/
 }
 
 @keyframes glow {

@@ -17,10 +17,10 @@ function openCard() {
 	cover.className = 'open-card';
 
 	music.currentTime = 0; 
-    music.play();
+  music.play();
 
-    const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
-    document.getElementById('wish').textContent = randomWish;
+  const randomWish = wishes[Math.floor(Math.random() * wishes.length)];
+  document.getElementById('wish').textContent = randomWish;
 }
 
 function closeCard() {
